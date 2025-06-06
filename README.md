@@ -1,2 +1,2 @@
 # Midhat10.github.io
-https://github.com/Midhat10/Midhat10.github.io.git/kata-academy__home-work2
+https://midhat10.github.io/kata-academy__home-work2/
