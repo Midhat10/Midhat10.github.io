@@ -15,28 +15,25 @@
     <link rel="stylesheet" href="css/media.css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="header__nav nav flex">
-        <button class="btn btn__reset btn__cancellation">
-        </button>
-        <div class="logoplace">
-          <a href="#" class="logo__link">
-            <img src="svg/cps.svg" alt="logo" class="logo">
-          </a>
-        </div>
-        <button class="btn btn__reset btn__search">
-        </button>
-      </nav>
-      </div>
-    </header>
     <main class="main">
-      <div class="container">
+      <aside class="aside flex">
+       <div class="aside__transition">
+         <div class="aside__header flex">
+                    <button class="btn nav__btn nav__btn--cancellation">
+          </button>
+          <div class="logoplace">
+            <a href="#" class="logo__link">
+              <img src="svg/cps.svg" alt="logo" class="logo">
+            </a>
+          </div>
+          <button class="btn nav__btn nav__btn--search">
+          </button>
+        </div>
         <nav class="main__nav nav">
           <ul class="main__list flex">
             <li class="main__item main__item--active">
               <a href="#" class="main__link main__link--active">
-              Ремонт техники
+                Ремонт техники
               </a>
             </li>
             <li class="main__item">
@@ -76,27 +73,23 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </main>
-    <footer class="footer">
-     <div class="container">
-       <nav class="footer__nav nav">
-        <ul class="footer__list flex">
-          <li class="footer__item">
-            <button class="btn btn__reset btn__phone">
-            </button>
-          </li>
-          <li class="footer__item">
-            <button class="btn btn__reset btn__feedback">
-            </button>
-          </li>
-          <li class="footer__item">
-            <button class="btn btn__reset btn__contacts">
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <ul class="footer__contacts contacts flex">
+       </div>
+         <div class="aside__footer">
+           <ul class="aside__btns-list flex">
+            <li class="aside__item">
+              <button class="btn aside__btn aside__btn--phone">
+              </button>
+            </li>
+            <li class="aside__item">
+              <button class="btn aside__btn aside__btn--feedback">
+              </button>
+            </li>
+            <li class="aside__item">
+              <button class="btn aside__btn aside__btn--contacts">
+              </button>
+            </li>
+          </ul>
+        <ul class="aside__contacts contacts flex">
           <li class="contacts__item">
             <a href="mailto:mail@cps.com" class="contacts__link--mail">
               mail@cps.com
@@ -108,24 +101,25 @@
             </a>
           </li>
         </ul>
-        <ul class="footer__langs langs flex">
+        <ul class="aside__langs langs flex">
           <li class="langs__item">
-            <a href="" class="langs__link langs__link--ru">
+            <a href class="langs__link langs__link--ru">
               RU
             </a>
           </li>
           <li class="langs__item">
-            <a href="" class="langs__link langs__link--en">
+            <a href class="langs__link langs__link--en">
               EN
             </a>
           </li>
           <li class="langs__item">
-            <a href="" class="langs__link langs__link--ch">
+            <a href class="langs__link langs__link--ch">
               CH
             </a>
           </li>
         </ul>
-     </div>
-    </footer>
+         </div>
+      </aside>
+    </main>
   </body>
 </html>

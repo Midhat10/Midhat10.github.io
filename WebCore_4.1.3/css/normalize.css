@@ -168,6 +168,15 @@ textarea {
   margin: 0; /* 2 */
 }
 
+/* it needs for btn reset */
+
+button {
+  border:none;
+  padding:0;
+  color:transparent;
+  cursor: pointer;
+}
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.

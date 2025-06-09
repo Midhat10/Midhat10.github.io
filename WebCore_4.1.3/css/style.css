@@ -25,40 +25,38 @@ a {
     display: flex;
 }
 
-.btn__reset {
-  border:none;
-  padding:0;
-  color:transparent;
-  cursor: pointer;
-}
 
 body {
   position:relative;
-    margin: 0;
-    padding: 0;
-    width: 320px;
-    font-family: 'TTLakes',sans-serif;
-    font-weight: 400;
-    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
-  -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+  margin: 0;
+  padding: 0;
+  max-width: 320px;
+  width:100%;
+  font-family: 'TTLakes',sans-serif;
+  font-weight: 400;
 }
 
-.container {
+
+.aside {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   margin: 0 auto 0 0;
   padding: 0 24px;
-  width:320px;
   background-color: #ffffff;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+-2px 0 4px 0 rgba(69, 79, 126, 0.02);
 }
 
 .btn {
   position: relative;
-width:40px;
-height:40px;
-border-radius: 50%;
-background-color:#FF3E79;
-background-repeat: no-repeat;
-background-position: 50% 50%;
-transition: opacity 0.2s ease-in-out;
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  background-color:#FF3E79;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .btn:hover {
@@ -67,30 +65,31 @@ transition: opacity 0.2s ease-in-out;
 
 
 
-/* header */
+/* aside__header */
 
 
 
 
-.header__nav {
+.aside__header {
   padding-top:18.73px;
   padding-bottom:46.27px;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__nav .logoplace {
-  position:relative;
-  left:-32px;
+.logoplace {
+  margin-right: 60px;
 }
 
-.btn__cancellation {
-  top:-4px;
+.nav__btn {
+  bottom:5px;
+}
+
+.nav__btn--cancellation {
   background-image: url("../svg/cancellation-small.svg");
 }
 
-.btn__search {
-top:-4px;
+.nav__btn--search {
 background-image: url("../svg/search-small.svg");
 }
 
@@ -134,30 +133,23 @@ background-image: url("../svg/search-small.svg");
   color: #7e7e82;
 }
 
-/* footer */
+/* aside__footer */
 
 
-.footer .container {
-  padding-top: 268px;
-}
-
-.footer__nav {
+.aside__btns-list {
   margin-bottom: 11px;
-}
-
-.footer__list {
   gap:16px;
 }
 
-.btn__phone {
+.aside__btn--phone {
     background-image: url("../svg/phone-small.svg");
 }
 
-.btn__feedback {
+.aside__btn--feedback {
     background-image: url("../svg/feedback-small.svg");
 }
 
-.btn__contacts {
+.aside__btn--contacts {
     background-image: url("../svg/contacts-small.svg");
 }
 
@@ -183,7 +175,7 @@ color: #1b1c21;
 }
 
 
-.footer__langs {
+.aside__langs {
   margin-top:40px;
   padding-bottom: 32px;
 }
