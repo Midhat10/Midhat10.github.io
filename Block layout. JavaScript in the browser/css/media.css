@@ -1,0 +1,11 @@
+@media (min-width:768px) {
+  .swiper {
+    height: 100vh;
+  }
+
+
+  .swiper-pagination {
+    display: none;
+  }
+
+}
