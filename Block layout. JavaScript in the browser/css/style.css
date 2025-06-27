@@ -10,9 +10,10 @@ html {
 
 body {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   height: 100%;
+  max-width: 1120px;
 
   font-family: 'TTLakes', sans-serif;
   font-weight: 400;
