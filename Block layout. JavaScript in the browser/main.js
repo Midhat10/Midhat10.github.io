@@ -3,7 +3,7 @@ const swiper = new window.Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   // loop: true,
-  slidesPerView: 1.3,
+  slidesPerView: 1.28,
   spaceBetween: 16,
 
   // If we need pagination
@@ -13,18 +13,18 @@ const swiper = new window.Swiper('.swiper', {
   },
   breakpoints: {
     768: {
-      direction: 'vertical',
-      slidesPerView: '2',
-      centeredSlides: false
+       slidesPerView: 0,
+      spaceBetween: 0,
     },
     1024: {
-      slidesPerView: '3',
+       slidesPerView: 0,
+      spaceBetween: 0,
       centeredSlides: false
     }
   }
 });
 
-// var urlLogos = [] ;
+// Переменные
 var list = document.querySelector('.swiper-wrapper');
 var items = list.children;
 
@@ -35,18 +35,47 @@ var addSlide = function (logotype) {
   var slide =newSlideTemplate.cloneNode(true);
   var logo = slide.querySelector('.logoplace');
   logo.style.backgroundImage =  `url(${logotype})`
-  console.log(`url(${logotype})`);
 
   list.appendChild(slide);
 }
 
-for (var i = 1; i <= 8; i++) {
-  addSlide(`img/logo-${i}.png`);
-}
+var render = function () {
+  for (var i = 1; i <= 8; i++) {
+    addSlide(`img/logo-${i}.png`);
+  }
 
-for (var i = 1; i <= 3; i++) {
-  addSlide(`img/logo-${i}.png`);
+  for (var i = 1; i <= 3; i++) {
+    addSlide(`img/logo-${i}.png`);
+  }
+};
+
+render();
+
+
+
+
+// ставим прослушиватель на кнопку Показать всё.
+
+var btnHandler = document.querySelector('.swiper__handler');
+
+btnHandler.addEventListener('click', function() {
+  var text = btnHandler.textContent;
+  if ( text === "Показать все" ) {
+    for (var i = 0; i < items.length; i++) {
+  items[i].classList.add('swiper__show');
 }
+  btnHandler.textContent = "Скрыть";
+  list.style.marginBottom = '45px';
+  console.log(text);
+    } else {
+      for (var i = 0; i < items.length; i++) {
+  items[i].classList.remove('swiper__show');
+};
+  btnHandler.textContent = "Показать все";
+  list.style.marginBottom = '24px';
+    }
+
+});
 
 
 
