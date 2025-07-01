@@ -6,6 +6,10 @@
     padding-right: 24px;
   }
 
+  .swiper__gradient-block {
+    display: none;
+  }
+
   .swiper__title {
     margin-bottom: 40px;
   }
